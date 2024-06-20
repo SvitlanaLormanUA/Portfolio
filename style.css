@@ -130,3 +130,8 @@ a:hover {
 .hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
+
+/*SECTIONS*/
+#profilePic1 {
+    border-radius: 50%;
+}
