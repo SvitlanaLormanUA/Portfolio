@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQueries.css">
 </head>
 <body>
 
@@ -24,25 +23,24 @@
     <nav id="hamburger-nav"> 
         <section class="logo">Svitlana Lorman</section>
         <section class="hamburger-menu">
-          <section class="hamburger-icon" onclick = "toggleMenu()">
+          <section class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
           </section>  
 
           <section class="menu-links">
-            <li><a href="#about"  onclick = "toggleMenu()"> About </a></li>
-            <li><a href="#experience"  onclick = "toggleMenu()"> Experience </a></li>
-            <li><a href="#projects"  onclick = "toggleMenu()"> Projects </a></li>
-            <li><a href="#contacts"  onclick = "toggleMenu()"> Contacts </a></li>
-
+            <li><a href="#about" onclick="toggleMenu()"> About </a></li>
+            <li><a href="#experience" onclick="toggleMenu()"> Experience </a></li>
+            <li><a href="#projects" onclick="toggleMenu()"> Projects </a></li>
+            <li><a href="#contacts" onclick="toggleMenu()"> Contacts </a></li>
           </section>
         </section>
     </nav>
 
     <section id="profile">
         <section class="section__pic-container">
-            <img src="./assets/profile1.jpg" alt="Svitlana Lorman profile pic " id="profilePic1">
+            <img src="./assets/profile1.jpg" alt="Svitlana Lorman profile pic" id="profilePic1">
         </section>
         <section class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
@@ -52,67 +50,96 @@
           <p class="section__text__p4">UI/UX Designer</p>
 
           <section class="btn-container">
-            <button class="btn btn-color-2"
-             onclick="window.open('./assets/CV.pdf')">
+            <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">
               Download CV
             </button>
 
-            <button class="btn btn-color-1"
-             onclick="location.href='./#contact'">
+            <button class="btn btn-color-1" onclick="location.href='#contacts'">
               Contact Info
             </button>
           </section>
 
-
-          <!--ADD LINKEDIM-->
           <section id="social-container">
-            <img src="assets/linkedin.png" alt="My LinkedIn Profile"
-            class="icon" onclick="location.href='https://linkedin.com/in/svitlana-lorman-1abab230b'"/>
-
-
-            <img src="assets/github.png" alt="My GitHub Profile"
-            class="icon" onclick="location.href='https://github.com/SvitlanaLormanUA'"/>
-
+            <img src="assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://linkedin.com/in/svitlana-lorman-1abab230b'"/>
+            <img src="assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/SvitlanaLormanUA'"/>
           </section>
-
-         
         </section>
     </section>
+
     <section id="about">
-      <p class="section__text__p1">Get To Know More </p>
+      <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <section class="section-container">
-  
-        <img 
-        src="./assets/profile2.jpg" 
-        alt="Profile Picture"
-        class="about-pic"
-        id="profile-pic-2"/>
-
-
-      <section class="about-details-container"> 
-         <section class="about-containers">
+        <section class="section__pic-container" id="profile-pic-2">
+          <img src="./assets/profile3.jpg" alt="Profile Picture" class="about-pic"/>
+        </section>
+        <section class="about-details-container"> 
+          <section class="about__containers">
             <section class="details-container"> 
-              <img 
-              src="./assets/experience.png" 
-              alt="Experience icon"
-              class="icon"/>
-
+              <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
               <h3>Experience</h3>
-              <p>2+ years <br/> Frontend Development</p>
-              <section class="details-container"> 
-                <img 
-                src="./assets/education.png" 
-                alt="Education icon"
-                class="icon"/>
-                <h3>Education</h3>
-                <p>Software Engineering <br/> Bachelor's Degree</p>
+              <p>1+ year <br/> Frontend Development</p>
+              <p>1+ year <br/> UI/UX Designer</p>
             </section>
-
+            <section class="details-container"> 
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <h3>Education</h3>
+              <p>Software Engineering <br/> Bachelor's Degree</p>
+              <p>Udemy Course <br/>"Web-Developer Bootcamp"</p>
+            </section>
           </section>
-         </section>
+          <section class="text-container">
+            <p>
+              I have been working on some projects as a UI/UX Designer in a non-commercial student organisation called FIDO. 
+              We have created a DMS server, which allows students to get place in dormitory, pay for the room and check whether there are available rooms to change the place of living.
+              Furthermore, we are working on a site which will allow students to post anonymous reviews about courses and university's professors, as well as to look through all previous reviews.
+            </p>
+            <br>
+            <p>
+              I have also been working as a Frontend Developer on freelance, creating sites for small cafes, cinemas, and other small businesses.
+            </p>
+          </section>
+        </section>
       </section>
+      <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#experience'"/>
     </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <section class="experience-details-container">
+        <section class="about__containers">
+          <section class="details-containers">
+            <h2 class="experience-sub-title">Frontend Developer</h2>
+            <section class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <section>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </section>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <section>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </section>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <section>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </section>
+              </article>
+            </section>
+          </section>
+        </section>
+      </section>
+      <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#projects'"/>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
