@@ -351,3 +351,9 @@ article .icon {
 
 /*PROJECTS SECTION*/
 
+.project-img{
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+}
