@@ -373,7 +373,10 @@ article .icon {
     margin: 1rem;
     color: black;
 }
+.project-img {
+    min-height: 241px;
 
+}
 /*CONTACTS*/
 
 #contacts {
